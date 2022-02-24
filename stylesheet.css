@@ -1,7 +1,62 @@
-body {
-    background: yellowgreen;
+/* ROOT SECTION */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-svg {
-    height: 10px;
+a {
+    text-decoration: none;
 }
+
+/* NAVBAR SECTION */
+
+.navbar {
+    height: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.navbar__logo {
+    width: 120px;
+}
+.navbar__icon {
+    height: 20px;
+    fill: white;
+}
+
+.navbar__linkcontainer {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.navbar__contactlinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__links {
+    width: 500px;
+}
+
+/* HERO SECTION */
+
+
+.hero__image {
+    height: 60vh;
+    background-image: url("project-files/materiale/slider.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.hero__textTop {
+    font-size: 3rem;
+}
+.hero__textButtom {
+    font-size: 5rem;
+}
+
