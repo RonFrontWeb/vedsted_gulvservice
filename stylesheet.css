@@ -29,7 +29,7 @@ a {
 /* #region GLOBAL STYLING SECTION */
 
 .centered {
-    max-width: 900px;
+    max-width: 1000px;
     margin:0 auto ;
 }
 /* #endregion GLOBAL STYLING SECTION */
@@ -47,8 +47,7 @@ a {
     width: 150px;
 }
 .navbar__icon {
-    padding-right: 10px;
-    height: 20px;
+    height: 25px;
     fill: var(--red);
 }
 
@@ -64,21 +63,33 @@ a {
     justify-content: flex-end;
     
 }
-.navbar__link {
-    color: var(--black);
-}
-.navbar__link--icon {
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-}
-.navbar__link--phone {
-    color: var(--yellow);
-}
-
 .navbar__links {
     width: 500px;
 }
+.navbar__link {
+    color: var(--black);
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+.navbar__link--icon {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link--phone {
+    color: var(--yellow);
+}
+.navbar__link--margin {
+    margin-right: 10px;
+
+}
+
+.navbar__link--menu:hover {
+    border-bottom:2px var(--yellow) solid ;
+    
+}
+
 
 
 /* #endregion NAVBAR SECTION*/
@@ -133,3 +144,73 @@ a {
     z-index: -1;
 }
 /* #endregion HERO SECTION */
+
+/* #region PRODUCTS SECTION */
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.product__textblock {
+    text-align: center;
+}
+.product__heading {
+    padding-top:50px ;
+}
+.product__text {
+    font-size: 0.8rem;
+
+}
+.product__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.product__single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.product__image {
+    height: 220px;
+    margin: 20px;
+}
+/* #endregion PRODUCTS SECTION */
+
+/* #region ADVICE SECTION */
+.advice {
+    background-image: url("project-files/materiale/trae.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+
+.advice__infomationcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+.advice__heading {
+    padding-top: 30px;
+}
+.advice__text {
+    font-size: 0.8rem;
+}
+.advice__innertext {
+    margin-top: 20px;
+    font-size: 0.8rem;
+
+}
+.advice__guarantee {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+/* #endregion ADVICE SECTION */
