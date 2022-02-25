@@ -166,6 +166,7 @@ a {
 .product__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
 }
 .product__single {
     display: flex;
@@ -186,7 +187,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30vh;
+    height: 300px;
 }
 
 .advice__infomationcontainer {
