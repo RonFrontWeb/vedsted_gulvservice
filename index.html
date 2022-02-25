@@ -5,36 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;900&display=swap" rel="stylesheet">
     <title>Vedsted Gulvservice ApS</title>
 </head>
 <body>
-    <nav class="navbar">
+    
+    <nav class="navbar centered">
         <div class="navbar__logocontainer"><a href=""><img class="navbar__logo" src="project-files/materiale/logo_korrekt.png" alt=""></a></div>
         <div class="navbar__linkcontainer">
             <div class="navbar__contactlinks">
-                <a href="#"><svg class="navbar__icon" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg>Info@vedsted-gulve.dk</a>
-                <a href="#"><svg class="navbar__icon" viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path></svg><span>44 91 48 99</span></a>
-                <a href="#"><svg class="navbar__icon" viewBox="0 0 24 24"><path d="m 13.521044,21.874705 v -9 h 3 l 0.47,-3.4900003 h -3.47 V 7.1547049 c 0,-1 0.28,-1.71 1.73,-1.71 h 1.85 v -3.13 a 25.28,25.28 0 0 0 -2.7,-0.14 c -2.67,0 -4.5000005,1.64 -4.5000005,4.63 V 9.3847047 H 6.9010426 v 3.5000003 h 3.0000009 v 9 z"></path></svg></a>
+                <a class="navbar__link navbar__link--icon" href="#"><svg class="navbar__icon" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg>Info@vedsted-gulve.dk</a>
+                <a class="navbar__link navbar__link--icon navbar__link--phone" href="#"><svg class="navbar__icon" viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path></svg>44 91 48 99</a>
+                <a class="navbar__link navbar__link--icon" href="#"><svg class="navbar__icon" viewBox="0 0 24 24"><path d="m 13.521044,21.874705 v -9 h 3 l 0.47,-3.4900003 h -3.47 V 7.1547049 c 0,-1 0.28,-1.71 1.73,-1.71 h 1.85 v -3.13 a 25.28,25.28 0 0 0 -2.7,-0.14 c -2.67,0 -4.5000005,1.64 -4.5000005,4.63 V 9.3847047 H 6.9010426 v 3.5000003 h 3.0000009 v 9 z"></path></svg></a>
             </div>
             <div class="navbar_links">
-                <a href="#">Velkommen</a>
-                <a href="#">Gulvslibning & behandling</a>
-                <a href="#">Linoleum, vinyl & tæpper</a>
-                <a href="#">Gulvvådrum</a>
-                <a href="#">Trægulv</a>
-                <a href="#">Om os</a>
-                <a href="#">Kontakt</a>
+                <a class="navbar__link" href="#">Velkommen</a>
+                <a class="navbar__link" href="#">Gulvslibning & behandling</a>
+                <a class="navbar__link" href="#">Linoleum, vinyl & tæpper</a>
+                <a class="navbar__link" href="#">Gulvvådrum</a>
+                <a class="navbar__link" href="#">Trægulv</a>
+                <a class="navbar__link" href="#">Om os</a>
+                <a class="navbar__link" href="#">Kontakt</a>
             </div>
         </div>
     </nav>
     <section class="hero">
         <div class="hero__image">
-            <div class="hero__headline">
+            <div class="hero__headline centered">
                 <p class="hero__textTop">Vil du have </p>
-                <p class="hero__textButtom">flotte gulve</p>
+                <p class="hero__textButtom ">flotte gulve?</p>
+                <button class="hero__btn ">Få et tilbud</button>
             </div>
-            <div class="hero__btn" ><p>Få et tilbud</p></div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product__textblock">
+            <h3 class="product__heading">Velkommen til Vedsted Gulvservice <br> -din professionelle gulvpartner </h3>
+            <p class="product__text">Har du brug for at få flottere gulve? Så kan vi hjælpe dig. <br> Vi kan det hele. Rive gulve op, lægge nye, isolere, slibe og selvfølgelig <br> behandle dem med de bedste produkter. <br> Bare spørg - så finder vi løsningen</p>
+        </div>
+        <div class="product__container">
+            <div class="product__single" >
+                <img class="product__image" src="" alt="">
+                <p class="product__text"></p>
+            </div>
         </div>
     </section>
 </body>
