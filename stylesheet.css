@@ -1,4 +1,5 @@
 /* #region GLOBAL VARIABLES SECTION */
+
 :root {
     --yellow: #ecc511;
     --red: #7a0202;
@@ -65,8 +66,6 @@ a {
 }
 .navbar__links {
     justify-content: flex-end;
-    flex-grow:-1;
-    flex-basis: 0;
 }
 
 .navbar__link {
@@ -80,13 +79,15 @@ a {
     display: flex;
     align-items: center;
 }
+.navbar__link--icon:hover {
+    color: var(--red);
+}
 
 .navbar__link--phone {
     color: var(--yellow);
 }
 .navbar__link--margin {
     margin-right: 10px;
-
 }
 
 .navbar__link--menu:hover {
@@ -172,24 +173,35 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 50px;
-    gap: 25px;
+    gap: 35px;
 }
 .product__single {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 600;
+    color: var(--black);
+}
+.product__single:hover .product__image {
+    transform: scale(1.2);
+    border: none;
 }
 
+.product__imagecontainer {
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateZ(0);
+}
 .product__image {
+    transform: scale(1);
     width: 100%;
+    transition: transform .5s ease-in-out;
 }
 /* #endregion PRODUCTS SECTION */
 /* #region ADVICE SECTION */
 .advice {
     background-image: url("project-files/materiale/trae.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     padding: 20px 0 50px ;
 }
@@ -217,6 +229,7 @@ a {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     align-items: center;
     justify-items: center;
 }
@@ -255,20 +268,18 @@ a {
     text-align: center;
     margin-bottom:30px ;
 }
-.contact__innertext {
-    font-weight: 600;
-}
 .contact__form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
 }
 .contact__textarea {
     flex-grow: 1;
+    padding: 10px;
 }
 .contact__input {
+    padding: 10px;
     height: 30px;
     margin-bottom: 10px;
 }
@@ -279,10 +290,22 @@ a {
     background-color: var(--red);
     color: var(--white);
     text-transform: uppercase;
+    border-radius: 3px;
+}
+.contact__bth:active {
+    background-color: var(--gray);
 }
 .contact__map {
     height: 100%;
     width: 100%;
+}
+.contact__link{
+    color: var(--black);
+    font-weight: 600;
+
+}
+.contact__link:hover{
+    color: var(--red);
 }
 /* #endregion CONTACT SECTION */
 /* #region FOOTER SECTION */
@@ -335,10 +358,17 @@ a {
 }
 .footer__highlight{
     font-weight: 600;
+    color: var(--white);
+}
+
+.footer__link{
+    color: var(--white);
+}
+.footer__link:hover{
+    color: var(--yellow);
 }
 
 /* #endregion FOOTER SECTION */
-
 /* #region MEDIA QUERIES SECTION */
 
 @media only screen and (max-width: 965px) { 
@@ -366,7 +396,7 @@ a {
         height: 40px;
         border: none;
         background-color: transparent;
-        fill: var(--black);
+        fill: var(--red);
         margin-left:80px;
         margin-right:10px;
     }
@@ -377,29 +407,31 @@ a {
         top: 50px;
         left: 0;
         position: absolute;
-        display: none;
+        /* display: none; */
         width: 100%;
         background-color: var(--gray);
         z-index: 1;
+        height: 0;
+        transition: height .3s;
+        overflow: hidden;
     }
     .navbar__link {
         color: var(--white);
         
     }
     .navbar__links--toggle {
-        display: block;
+        height: 290px;
+        /* display: block; */
     }
     .navbar__icon {
         display: block;
-        fill: var(--black);
     }
    
     .navbar__link--menu {
-        margin: 20px;
+        margin:20px 0;
+        height: 20px;
         display: block;
         text-align: center;
-        width: 100%;
-        height: 20px;
         box-sizing: border-box;
     } 
    
@@ -477,7 +509,7 @@ a {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
 
     /* NAVBAR SECTION */ 
 
@@ -491,7 +523,7 @@ a {
         height: 40px;
         border: none;
         background-color: transparent;
-        fill: var(--black);
+        fill: var(--red);
         margin-left:30px;
         margin-right:10px;
         
@@ -516,7 +548,7 @@ a {
     }
    
     .navbar__link--menu {
-        margin: 20px;
+        margin:20px 0;
         display: block;
         text-align: center;
         width: 100%;
@@ -602,5 +634,3 @@ a {
     }
 }
 /* #endregion MEDIA QUERIES SECTION */
-
-
