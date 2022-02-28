@@ -11,7 +11,7 @@
     <title>Vedsted Gulvservice ApS</title>
 </head>
 <body>
-    
+    <header>
     <nav class="navbar centered">
         <div class="navbar__logocontainer"><a href=""><img class="navbar__logo" src="project-files/materiale/logo_korrekt.png" alt=""></a></div>
         <div class="navbar__linkcontainer">
@@ -32,6 +32,8 @@
             </div>
         </div>
     </nav>
+    </header>
+    <main>
     <section class="hero">
         <div class="hero__image">
             <div class="hero__headline centered">
@@ -106,9 +108,9 @@
         </div>
         <div class="contact__container">
             <form class="contact__form" action="">
-                <input class="contact__input" type="text" placeholder="Navn">
-                <input class="contact__input" type="phone" placeholder="Telefon">
-                <input class="contact__input" type="email" placeholder="Mailadresse">
+                <input class="contact__input" type="text" placeholder="Navn" required>
+                <input class="contact__input" type="phone" placeholder="Telefon" required>
+                <input class="contact__input" type="email" placeholder="Mailadresse" required>
                 <textarea class="contact__textarea"placeholder="Besked"></textarea>
                 <input class="contact__bth" type="submit" value="Send">
             </form>
@@ -117,6 +119,7 @@
             </div>
         </div>
     </section>
+</main>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__support centered">
